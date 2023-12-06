@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 98vw;
+    width: 98vw;
+    background-image: url('sky1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#solar-system{
+    height:90vw;
+    width:90vw;
+    transform: translateX(calc(4vw)) translateY(calc(4vw));
+}
+
+.object{
+    border-radius:50%;
+    position: absolute;
+    margin: auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.p-orbit, #m-orbit{
+    border:0.10px solid lightgrey;
+    opacity:0.5;
+    background: transparent;
+}
+
+#belt{
+    height:48.5%;
+    width:48.5%;
+    animation: spin 50s infinite linear;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+
+#m-orbit{
+    height:4%;
+    width:4%;
+}
+
+.planet,#moon{
+    z-index:100;
+    animation: spin 10s infinite linear;
+}
+
+#sun{
+    height:6%;
+    width:6%;
+}
+
+#moon{
+    height:0.5%;
+    width: 0.5%;
+    background-color: white;
+}
+
+#mercury{
+    height:1%;
+    width:1%;
+}
+
+#venus{
+    height:1.5%;
+    width:1.5%;
+}
+
+#earth{
+    height:2%;
+    width:2%;
+}
+
+#mars{
+    height:1.75%;
+    width:1.75%;
+}
+
+#jupiter{
+    height:4%;
+    width:4%;
+}
+
+#saturn{
+    height:6%;
+    width:6%;
+    border-radius:0%;
+}
+
+#uranus{
+    height:3%;
+    width:3%;
+}
+
+#neptune{
+    height:2.5%;
+    width:2.5%;
+}
